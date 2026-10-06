@@ -62,9 +62,9 @@ final class FiltroViaje
 function catalogoPaquetes(): array
 {
     return [
-        ['id' => 'cancun', 'hotel' => 'Costa Azul Resort', 'ciudad' => 'Cancún', 'pais' => 'México', 'fecha' => '2026-10-15', 'duracion' => 7, 'precio' => 850000, 'cupos' => 5, 'oferta' => true],
-        ['id' => 'buenos-aires', 'hotel' => 'Hotel Plaza', 'ciudad' => 'Buenos Aires', 'pais' => 'Argentina', 'fecha' => '2026-11-05', 'duracion' => 4, 'precio' => 230000, 'cupos' => 8, 'oferta' => false],
-        ['id' => 'rio', 'hotel' => 'Copacabana Palace', 'ciudad' => 'Río de Janeiro', 'pais' => 'Brasil', 'fecha' => '2026-12-20', 'duracion' => 6, 'precio' => 990000, 'cupos' => 3, 'oferta' => true],
-        ['id' => 'santiago', 'hotel' => 'Hotel Andes', 'ciudad' => 'Santiago', 'pais' => 'Chile', 'fecha' => '2026-10-10', 'duracion' => 3, 'precio' => 180000, 'cupos' => 12, 'oferta' => false],
+        ['id' => 'cancun', 'hotel' => 'Costa Azul Resort', 'ciudad' => 'Cancún', 'pais' => 'México', 'fecha' => '2026-10-15', 'duracion' => 7, 'precio' => 850000, 'cupos' => 5, 'oferta' => true, 'descripcion' => 'Días de descanso frente al Caribe, con playas de arena blanca y una ubicación ideal para conocer la zona.', 'incluye' => ['7 noches de alojamiento', 'Desayuno incluido', 'Traslado aeropuerto–hotel']],
+        ['id' => 'buenos-aires', 'hotel' => 'Hotel Plaza', 'ciudad' => 'Buenos Aires', 'pais' => 'Argentina', 'fecha' => '2026-11-05', 'duracion' => 4, 'precio' => 230000, 'cupos' => 8, 'oferta' => false, 'descripcion' => 'Una escapada urbana para disfrutar de cafés, arquitectura y los barrios más emblemáticos de la ciudad.', 'incluye' => ['4 noches de alojamiento', 'Desayuno incluido', 'Guía de barrios y paseos']],
+        ['id' => 'rio', 'hotel' => 'Copacabana Palace', 'ciudad' => 'Río de Janeiro', 'pais' => 'Brasil', 'fecha' => '2026-12-20', 'duracion' => 6, 'precio' => 990000, 'cupos' => 3, 'oferta' => true, 'descripcion' => 'Combina la energía de Río con tiempo para relajarte junto al mar y descubrir sus miradores.', 'incluye' => ['6 noches de alojamiento', 'Desayuno incluido', 'Traslado aeropuerto–hotel']],
+        ['id' => 'santiago', 'hotel' => 'Hotel Andes', 'ciudad' => 'Santiago', 'pais' => 'Chile', 'fecha' => '2026-10-10', 'duracion' => 3, 'precio' => 180000, 'cupos' => 12, 'oferta' => false, 'descripcion' => 'Una pausa en la capital para explorar su gastronomía, parques y vistas a la cordillera.', 'incluye' => ['3 noches de alojamiento', 'Desayuno incluido', 'Recomendaciones locales']],
     ];
 }
