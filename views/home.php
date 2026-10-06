@@ -48,9 +48,14 @@
           <article class="package-card">
             <h3><?= e($paquete['hotel']) ?></h3>
             <p><strong><?= e($paquete['ciudad']) ?>, <?= e($paquete['pais']) ?></strong></p>
-            <p>Salida: <?= e($paquete['fecha']) ?> · <?= $paquete['duracion'] ?> noches</p>
+            <p class="package-description"><?= e($paquete['descripcion']) ?></p>
+            <p>Salida: <strong><?= e($paquete['fecha']) ?></strong> · <?= $paquete['duracion'] ?> noches</p>
             <p>Desde <strong>$<?= number_format($paquete['precio'], 0, ',', '.') ?> CLP</strong></p>
             <p>Disponibilidad actualizada: <?= $paquete['cupos'] ?> cupos</p>
+            <details class="package-details">
+              <summary>¿Qué incluye?</summary>
+              <ul><?php foreach ($paquete['incluye'] as $detalle): ?><li><?= e($detalle) ?></li><?php endforeach; ?></ul>
+            </details>
             <?php if ($paquete['oferta']): ?><p class="offer">¡Oferta especial disponible!</p><?php endif; ?>
             <form method="post" class="reservation-form">
               <input type="hidden" name="csrf_token" value="<?= e($_SESSION['csrf_token']) ?>">
@@ -60,6 +65,15 @@
             </form>
           </article>
         <?php endforeach; endif; ?>
+      </div>
+    </section>
+
+    <section class="booking-guide" aria-labelledby="booking-title">
+      <h2 id="booking-title">Tu viaje, en tres pasos</h2>
+      <div class="guide-grid">
+        <article><span class="guide-number">1</span><h3>Encuentra tu destino</h3><p>Filtra por ciudad, país, fecha o duración y compara las opciones disponibles.</p></article>
+        <article><span class="guide-number">2</span><h3>Arma tu itinerario</h3><p>Revisa qué incluye cada paquete y agrega al carrito los viajes que te interesan.</p></article>
+        <article><span class="guide-number">3</span><h3>Solicita tu reserva</h3><p>Confirma tu solicitud y nuestro equipo te contactará para ayudarte con los siguientes pasos.</p></article>
       </div>
     </section>
 

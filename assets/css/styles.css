@@ -94,6 +94,58 @@ button:hover {
 .package-card p {
   margin: 0.45rem 0;
 }
+.package-description {
+  min-height: 3.2em;
+  color: #4c6175;
+  line-height: 1.55;
+}
+.package-details {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e0e8ef;
+}
+.package-details summary {
+  color: var(--p);
+  font-weight: bold;
+  cursor: pointer;
+}
+.package-details ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+.booking-guide {
+  margin-top: 2rem;
+}
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.guide-grid article {
+  padding: 1.25rem;
+  border: 1px solid #d7e5f0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff, #f4f9fd);
+}
+.guide-grid h3 {
+  margin: 0.75rem 0 0.4rem;
+}
+.guide-grid p {
+  margin-bottom: 0;
+  color: #4c6175;
+  line-height: 1.55;
+}
+.guide-number {
+  display: inline-grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  color: white;
+  border-radius: 50%;
+  background: var(--p);
+  font-weight: bold;
+}
 .reservation-form {
   margin-top: 0.75rem;
 }
