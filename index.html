@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Horizonte Travel | Vista local</title>
+</head>
+<body>
+  <header>
+    <h1>Horizonte Travel</h1>
+    <p>Encuentra vuelos, hoteles y paquetes para tu próximo destino.</p>
+  </header>
+  <main>
+    <section class="search-container" aria-labelledby="search-title">
+      <h2 id="search-title">Buscar paquetes turísticos</h2>
+      <p class="helper-text">Vista de demostración: funciona directamente en el navegador.</p>
+      <div class="filters">
+        <label>Destino
+          <input type="text" id="destination" placeholder="Ej.: Cancún">
+        </label>
+        <label>Fecha de viaje
+          <input type="date" id="travel-date">
+        </label>
+        <label>Tipo de servicio
+          <select id="type">
+            <option value="">Todos</option>
+            <option value="Vuelo">Vuelos</option>
+            <option value="Hotel">Hoteles</option>
+            <option value="Paquete">Paquetes turísticos</option>
+          </select>
+        </label>
+        <button id="search-button" type="button">Buscar</button>
+      </div>
+    </section>
+    <div id="notification" class="notification" role="status" aria-live="polite"></div>
+    <section aria-labelledby="results-title">
+      <h2 id="results-title">Resultados disponibles</h2>
+      <div id="results-container"></div>
+    </section>
+    <section id="cart-container" class="cart-container" aria-labelledby="cart-title">
+      <h2 id="cart-title">Carrito de paquetes</h2>
+      <p id="empty-cart">Tu carrito está vacío. Agrega un paquete para continuar con tu reserva.</p>
+      <div id="cart-content" hidden>
+        <ul id="cart-list" class="cart-list"></ul>
+        <p id="cart-total" class="cart-total"></p>
+        <button id="confirm-reservation" type="button">Solicitar reserva segura</button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/model.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/events.js"></script>
+</body>
+</html>
+
